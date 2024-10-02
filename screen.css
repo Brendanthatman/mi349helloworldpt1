@@ -11,10 +11,38 @@ main {
     width: 800px;
 }
 
+.masthead {
+    background-image: url('images/Computer image.png');
+    background-size: cover; /*will get as much of the image as possible without skewing the aspect ratio, image will behave if adjusting size*/
+    background-position: bottom;
+    height: 250px;
+    border-radius: 20px;
+}
+
 .details {
     display: flex;
+    gap: 25px; /* feature of flexbox. will automatically adjust size based on size of window. does math for you */
+}
+
+.details section {
+    flex-grow: 1; /*says the flexbox can't grow past 1*/
+    flex-basis: 0; /*content will not try to fill the available space based on content; will make things evenly spaced*/
+    background: #eee;
+    padding: 25px;
+    border-radius: 20px;
+    margin-top: 25px;
 }
 
 img {
     width: 100%;
+}
+
+h2 {
+    margin: 0 0 10px 0;
+
+}
+
+p {
+    margin: 0;
+    line-height: 1.4em;
 }
