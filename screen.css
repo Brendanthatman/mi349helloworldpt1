@@ -13,11 +13,12 @@ main {
 }
 
 .masthead {
-    background-image: url('images/Computer image.png');
-    background-size: cover; /*will get as much of the image as possible without skewing the aspect ratio, image will behave if adjusting size*/
-    background-position: bottom;
+    /*background-image: url('images/Computer image.png');
+    background-size: cover; will get as much of the image as possible without skewing the aspect ratio, image will behave if adjusting size
+    background-position: bottom;*/
     height: 250px;
     border-radius: 20px;
+    background: no-repeat bottom / cover url('images/Computer image.png'); /*simplified version of above comment */
 }
 
 .details {
@@ -28,7 +29,7 @@ main {
 .details section {
     flex-grow: 1; /*says the flexbox can't grow past 1*/
     flex-basis: 0; /*content will not try to fill the available space based on content; will make things evenly spaced*/
-    background: #eee;
+    background: #EAE9EC;
     border-radius: 20px;
     margin-top: 25px;
 }
