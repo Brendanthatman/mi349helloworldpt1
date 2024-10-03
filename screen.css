@@ -3,6 +3,7 @@ body{
     font-family: Helvetica, sans-serif;
     border-top: 15px solid #424242;
     margin: 0 auto;
+    color: #424242;
 }
 
 
@@ -28,13 +29,43 @@ main {
     flex-grow: 1; /*says the flexbox can't grow past 1*/
     flex-basis: 0; /*content will not try to fill the available space based on content; will make things evenly spaced*/
     background: #eee;
-    padding: 25px;
     border-radius: 20px;
     margin-top: 25px;
 }
 
+/* took away section margin/padding and added individual elements padding/margin/radii */
+.details section p {
+    margin: 20px;
+}
+
+.details section h2 {
+    margin: 25px;
+}
+
+.details section.with-code {
+    padding: 0;
+}
+
+div.code-html {
+    padding: 25px;
+    background: #424242;
+    color: #fff;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
 img {
     width: 100%;
+}
+
+h1 {
+    background-image: url('images/Logo.png'); /*headings are block level elements - will always fill entire width of page*/
+    background-repeat: no-repeat;
+    background-size: 40px;
+    background-position: center left; /*default css behavior is to snap to upper left corner; this fixes logo*/
+    font-size: 3em;
+    padding-left: 55px;
+    margin: 100px 0 25px 0;
 }
 
 h2 {
